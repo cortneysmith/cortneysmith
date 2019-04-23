@@ -41,7 +41,7 @@ var lunchPhrase = [
 
 function getLunchPlace() {
     var randomLunch = lunchOptions[Math.floor(Math.random()*lunchOptions.length)];
-    var randomLunchPhrase = lunchPhrase[Math.floor(Math.random()*lunchOptions.length)];
+    var randomLunchPhrase = lunchPhrase[Math.floor(Math.random()*lunchPhrase.length)];
     var lunchString = randomLunchPhrase.replace("%%", randomLunch);
     document.getElementById("lunchPlace").innerHTML = lunchString;
 }
