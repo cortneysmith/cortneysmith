@@ -6,8 +6,10 @@ html {
 /* --- VARIABLES --- */
 
 body {
-  --mint-green: #7fe0b0;
+  --light-mint: #7fe0b0;
+  --dark-mint: #39ad73;
   --dark-blue: #343a91;
+  --light-blue: #5668d1;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
 
 #header {
   padding: 10px;
-  background: linear-gradient(90deg, var(--mint-green), var(--dark-blue));
+  background: linear-gradient(90deg, var(--light-mint), var(--dark-blue));
 }
 
 #header h1 {
@@ -54,53 +56,23 @@ h6 {
   margin: 0, 0, 5px, 0;
 }
 
-p.buttonArea {
-  text-align: center;
-}
-
-.item {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f7f7f7;
-}
-
 #main {
   display: grid;
   grid-template-columns: 1fr;
+  background: #fff;
+  padding: 10px;
   margin: 10px;
 }
 
-.blog_post {
-  display: grid;
-  padding: 5px;
+#main a,
+#main a:active,
+#main a:visited {
+  text-decoration: none;
+  color: var(--dark-blue);
+  border-bottom: 1px dotted var(--light-mint);
 }
 
-.blog_post h1 {
-  margin: 0;
-}
-
-.blog_post figure.image {
-  width: 80%;
-  justify-content: center;
-  display: grid;
-  margin: 0;
-  padding: 0;
-}
-
-.blog_post figure.image img {
-  width: 100%;
-  padding: 7px;
-  border: 1px solid #fff;
-}
-
-figcaption {
-  background: #fff;
-  font-family: "Gloria Hallelujah", cursive;
-  padding: 5px;
-  text-align: center;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+#main a:hover {
+  color: var(--light-blue);
+  border-bottom: 1px dotted var(--dark-mint);
 }
