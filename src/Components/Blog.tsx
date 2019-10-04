@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link, withRouter, RouteComponentProps } from "react-router-dom";
 import butter from "../butter-client";
-import "../css/blog.css";
 
 interface BlogState {
   meta: any;

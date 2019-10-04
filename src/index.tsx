@@ -1,12 +1,18 @@
+// REACT COMPONENTS
 import React from "react";
 import ReactDOM from "react-dom";
-import "./css/index.css";
 import Router from "./Components/Router";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<Router />, document.getElementById("main"));
+// CSS STYLESHEETS
+import "./css/index.css";
+import "./css/blog.css";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// APP
+ReactDOM.render(<Header />, document.getElementById("header"));
+ReactDOM.render(<Router />, document.getElementById("main"));
+ReactDOM.render(<Footer />, document.getElementById("footer"));
+
 serviceWorker.unregister();

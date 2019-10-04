@@ -10,30 +10,49 @@ body {
   --dark-mint: #39ad73;
   --dark-blue: #343a91;
   --light-blue: #5668d1;
+  --teal: #578a9f;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #ddd;
+  color: #333;
 }
 
 #header {
+  color: #fff;
   padding: 10px;
+  margin: 10px;
+  text-align: center;
   background: linear-gradient(90deg, var(--light-mint), var(--dark-blue));
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #header h1 {
-  color: #fff;
   font-size: 5em;
   font-weight: normal;
-  font-family: "Satisfy", cursive;
-  text-align: center;
+  font-family: "Dancing Script", cursive;
   margin: 0;
+}
+
+#header h2 {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.innerHeaderContainer {
   padding: 5px;
   border: solid #fff;
   border-width: 1px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 code {
@@ -58,10 +77,14 @@ h6 {
 
 #main {
   display: grid;
+  line-height: 1.5em;
   grid-template-columns: 1fr;
+  margin: 10px 10px 0 10px;
+}
+
+.App {
   background: #fff;
   padding: 10px;
-  margin: 10px;
 }
 
 #main a,
@@ -75,4 +98,56 @@ h6 {
 #main a:hover {
   color: var(--light-blue);
   border-bottom: 1px dotted var(--dark-mint);
+}
+
+#footer {
+  color: #fff;
+  margin: 0 10px 10px 10px;
+  background: linear-gradient(90deg, var(--teal), var(--dark-blue));
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.innerFooterContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+/* CENTER COLUMN */
+.footer-center-column {
+  display: grid;
+  grid-column: 2;
+  padding: 10px;
+}
+
+/* RIGHT-MOST COLUMN */
+.butter-cms-logo {
+  color: #fff;
+  display: grid;
+  grid-column: 3;
+  justify-content: right;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.butter-cms-logo:hover {
+  background: var(--light-blue);
+}
+
+.butter-cms-logo img {
+  width: 150px;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 0.8em;
+  color: #555;
+  text-transform: uppercase;
 }
