@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 interface AppState {}
 
@@ -81,7 +80,7 @@ class App extends Component {
           ante ut nibh gravida fermentum. Suspendisse pharetra elementum mi
           euismod semper. Sed sit amet aliquam purus. Mauris eu suscipit dolor.
         </p>
-        <Link to="/blog">Go to the blog...</Link>
+        <a href="/blog">Go to the blog...</a>
       </div>
     );
   }
