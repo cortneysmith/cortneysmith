@@ -83,7 +83,6 @@ class App extends Component {
           euismod semper. Sed sit amet aliquam purus. Mauris eu suscipit dolor.
         </p>
         <Link to="/blog">Go to the blog...</Link>
-        <Link to="/wishlist">Go to the wishlist...</Link>
       </div>
     );
   }
