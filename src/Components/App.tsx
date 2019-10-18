@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Wishlist from "./Wishlist";
 
 interface AppState {}
 
@@ -80,7 +82,8 @@ class App extends Component {
           ante ut nibh gravida fermentum. Suspendisse pharetra elementum mi
           euismod semper. Sed sit amet aliquam purus. Mauris eu suscipit dolor.
         </p>
-        <a href="/blog">Go to the blog...</a>
+        <Link to="/blog">Go to the blog...</Link>
+        <Link to="/wishlist">Go to the wishlist...</Link>
       </div>
     );
   }
