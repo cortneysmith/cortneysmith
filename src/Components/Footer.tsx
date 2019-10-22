@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ButterCMSLogo from "../images/butter-cms.png";
 
 class Footer extends Component {
   state = {
@@ -15,7 +14,7 @@ class Footer extends Component {
         <div className="butter-cms-logo">
           Blog powered by{" "}
           <a href="https://buttercms.com" target="_blank">
-            <img src={ButterCMSLogo} />
+            <img src="/images/butter-cms.png" />
           </a>
         </div>
       </div>
