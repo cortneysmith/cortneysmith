@@ -4,7 +4,6 @@ html {
 }
 
 /* --- VARIABLES --- */
-
 body {
   --light-mint: #7fe0b0;
   --dark-mint: #39ad73;
@@ -73,6 +72,7 @@ h4,
 h5,
 h6 {
   margin: 0, 0, 5px, 0;
+  text-align: center;
 }
 
 #main {
@@ -103,10 +103,22 @@ h6 {
 
 #footer {
   color: #fff;
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 0 10px;
   background: linear-gradient(90deg, var(--teal), var(--dark-blue));
+}
+
+#copyright {
+  background: #333;
+  color: #aaa;
+  text-align: center;
+  padding: 10px 10px 0 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  border-bottom: 10px solid #333;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  margin: 0 10px 0 10px;
+
 }
 
 .innerFooterContainer {
@@ -121,6 +133,7 @@ h6 {
   display: grid;
   grid-column: 2;
   padding: 10px;
+
 }
 
 /* RIGHT-MOST COLUMN */
@@ -130,7 +143,6 @@ h6 {
   grid-column: 3;
   justify-content: right;
   text-align: center;
-  border-bottom-right-radius: 10px;
   padding: 5px;
   font-family: "VT323", monospace;
   text-transform: uppercase;
@@ -144,11 +156,4 @@ h6 {
 
 .butter-cms-logo img {
   width: 150px;
-}
-
-#copyright {
-  text-align: center;
-  font-size: 0.8em;
-  color: #555;
-  text-transform: uppercase;
 }
