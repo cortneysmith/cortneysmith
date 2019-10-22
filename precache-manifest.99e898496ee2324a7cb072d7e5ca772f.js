@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86ab5b4fc52816486bb7221a1a6268af",
+    "revision": "af4d5263ac9d58c7f220b2c75be50cfa",
     "url": "/cortneysmith.org/index.html"
   },
   {
-    "revision": "74d755f5977c098535d4",
+    "revision": "442780592fd53aee5f70",
     "url": "/cortneysmith.org/static/css/main.597a4316.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cortneysmith.org/static/js/2.eedd7c8c.chunk.js"
   },
   {
-    "revision": "74d755f5977c098535d4",
-    "url": "/cortneysmith.org/static/js/main.73a95b34.chunk.js"
+    "revision": "442780592fd53aee5f70",
+    "url": "/cortneysmith.org/static/js/main.a6fc088d.chunk.js"
   },
   {
     "revision": "abcc2db2e01ba81049e4",
